@@ -8,7 +8,7 @@ const mySym = Symbol("key1")
 
 const jsUser = {
   name: "Yash",
-  // "fullname": "Yash Tyagi",
+  // "full name": "Yash Tyagi",
   [mySym]: "myKey1",  // important
   age: 18,
   location: "Jaipur",
@@ -21,14 +21,14 @@ const jsUser = {
 console.log(jsUser.email);
 //should use this one
 console.log(jsUser["email"]);
-console.log(jsUser["fullname"]);
+console.log(jsUser["full name"]);
 console.log(jsUser[mySym]);
 
 
 jsUser.email = "yash@chatgpt.com"
 console.log(jsUser["email"]);
 
-// Object.freeze(jsUser)
+// Object.freeze(jsUser)  changes do not propogate
 
 jsUser.email = "yash@chat.com";
 console.log(jsUser["email"]);
