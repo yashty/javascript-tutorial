@@ -1,7 +1,7 @@
 // array 
 
-//Shallow copy
-//Deep copy
+//Shallow copy -> share same reference
+//Deep copy => do not share same reference
 
 const myArr = [0, 1, 2, 3, 4, 5]
 const myHeros = ["shaktiman", "naagraj"]
@@ -16,17 +16,15 @@ myArr.push(6)
 myArr.pop()
 
 myArr.unshift(0)  // insert at start
-myArr.shift()
+myArr.shift()    // shift elemnt left from the front
 
 myArr.includes(9)
 
 myArr.indexOf(3)
 
-const newArr = myArr.join() // type => string
+const newArr = myArr.join() // change type => string
 
 // slice, splice
-
-console.log("A ", myArr);
 
 const myn1 = myArr.slice(1,3)
 console.log(myn1);
