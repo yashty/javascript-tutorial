@@ -1,3 +1,4 @@
+// this => current context
 const user = {
     username: "yash",
     price: 999,
@@ -13,19 +14,21 @@ const user = {
 // user.username = "sam"
 // user.welcomeMessage();
 
-// console.log(this);
+// console.log(this);  // in node environment => empty object
 
 // function chai(){
 //     let username = "yash"
 //     console.log(this.username);
 // }
 // chai()
+// not able to use this inside function => undefined
 
 // const chai = function() {
 //   let username = "yash";
 //   console.log(this.username);
 // }
 // chai();
+// not able to use this inside function => undefined
 
 
 const chai = () => {
@@ -33,6 +36,7 @@ const chai = () => {
   console.log(this);
 }
 // chai();
+// not able to use this inside function => undefined
 
 
 // const addTwo = (num1, num2) => {
