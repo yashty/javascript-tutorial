@@ -52,3 +52,8 @@ const addTwo = function (num) {
 };
 
 addTwo(5)
+
+
+global execution => this
+memory phase
+execution phase
